@@ -25,7 +25,7 @@ def extract_lyrics(urls):
             lyrics_list = soup.find_all('div', class_='Lyrics__Container-sc-1ynbvzw-5 Dzxov')
 
 
-            chemin = Path.cwd() / 'mes musique'
+            chemin = Path.cwd() / 'mes musiques'
             chemin.mkdir(exist_ok=True)
 
             test = False
@@ -63,7 +63,7 @@ def get_all_urls():
         print("impossible d'initialiser le procésuss")
 
 def liste_des_musiques():
-    chemin = Path.cwd() / 'mes musique'
+    chemin = Path.cwd() / 'mes musiques'
     return (chemin, [f.name for f in chemin.iterdir() if f.is_file()])
 
 
