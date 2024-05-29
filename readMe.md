@@ -10,7 +10,8 @@ Ce projet extrait des liens de chansons de Drake via une API (genius), analyse c
    cd projet_drake_analyse
    python -m venv venv
    source venv/bin/activate  # Unix/MacOS 
-   | .\venv\Scripts\activate # pour Windows
+     #or
+   .\venv\Scripts\activate # pour Windows
    pip install -r requirements.txt
    ```
 
@@ -26,10 +27,11 @@ Ce projet extrait des liens de chansons de Drake via une API (genius), analyse c
 
 ### Structure du projet
 - `requirements.txt` : Dépendances.
-- `main.py` : Script principal.
+- `Drake_any_song.py` : Script d'import des musiques.
+- `Drake_word` : Script pour determiner le mot le plus dit par Drake.
 - `api.json` : Données API.
 - `links.json` : Liens des musiques.
-- `lyrics/` : Paroles téléchargées.
+- `mes musiques/` : Paroles téléchargées.
 
 ### Contribution
 Les suggestions ou améliorations via pull requests ou issues sont bienvenues.
